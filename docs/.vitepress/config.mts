@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
-  base: '2025-2-wenqing/',
+  base: '/2025-2-wenqing/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
