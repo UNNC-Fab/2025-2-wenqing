@@ -9,16 +9,15 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Coursework', link: '/OpenSource'}
+      { text: 'Coursework', link: '/OpenSource'},
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Coursework',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'HUAWEI development language and programming environment', link: '/HUAWEI' },
+          { text: 'OpenSource', link: '/OpenSource' }
         ]
       }
     ],
