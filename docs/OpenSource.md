@@ -18,8 +18,8 @@ Apache License 2.0（简称 Apache 2.0 或 ASL 2.0）是一种高度流行的开
 
 ### 与其他许可的比较
 
-** vs. MIT**：两者都很宽松，MIT 更简短（几行文字），而 Apache 2.0 更详细，特别强调专利保护。Apache 2.0 适合企业环境，因为它减少了专利诉讼风险。
+相比于MIT而言：两者都很宽松，MIT 更简短（几行文字），而 Apache 2.0 更详细，特别强调专利保护。Apache 2.0 适合企业环境，因为它减少了专利诉讼风险。
 
-** vs. GPL (copyleft)**：GPL 强制所有修改和衍生作品必须开源并使用相同许可，而 Apache 2.0 不强制。这让 Apache 2.0 更受商业公司青睐，比如 Google、Microsoft 和 Apple 常用它。
+相比于GPL (copyleft)而言：GPL 强制所有修改和衍生作品必须开源并使用相同许可，而 Apache 2.0 不强制。这让 Apache 2.0 更受商业公司青睐，比如 Google、Microsoft 和 Apple 常用它。
 
 流行度：根据最近的开源报告（如 GitHub 的 Octoverse 2023），Apache 2.0 是第二受欢迎的许可（仅次于 MIT），在企业级项目中占比高。例如，Android 系统、TensorFlow 和 Hadoop 都使用它。

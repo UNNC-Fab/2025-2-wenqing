@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "Fablab Project",
   description: "A VitePress Site",
   base: '/2025-2-wenqing/',
   themeConfig: {
