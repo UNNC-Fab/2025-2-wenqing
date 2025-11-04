@@ -23,12 +23,10 @@ features:
 ---
 
 <style>
-  /* 名称改成白色、去掉渐变 */
   :root{
-    --vp-home-hero-name-color:#fff;
+    --vp-home-hero-name-color:#ffd700;
     --vp-home-hero-name-background:transparent;
   }
-  /* 居中对齐 */
   .VPHomeHero .name,
   .VPHomeHero .text,
   .VPHomeHero .tagline,
