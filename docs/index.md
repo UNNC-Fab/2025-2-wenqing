@@ -3,23 +3,23 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
+  name: "Fablab Project"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Fablab background
+      link: /Fablab background
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Arduino
+      link: /Arduino
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: AIM
+    details: How to Make Almost Anything
+  - title: DEVELOPMENT
+    details: Inclusiveness, innovation and sustainable development
+  - title: Concept
+    details: Bits to Atoms
 ---
 
