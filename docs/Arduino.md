@@ -2,6 +2,7 @@
 ##  open source hardware
 
 ##  1.SBC（Single-Board Computer）
+![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/arduino.jpg)
 把“能跑操作系统的计算机”做成一块小板子（常用 Linux）。CPU、内存、存储接口、USB/网口/显示/相机等都在板上，像极小的“迷你电脑”。
 - **常见代表-**：BeagleBone Black、Olimex OLinuXino、（以及被广泛使用但非严格 OSHW 的树莓派系列）。
 - **适用场景**：
@@ -16,6 +17,7 @@
 何时选它：当你需要“像电脑一样”的能力（相机、显示、网络、文件系统、多任务），就选 SBC；只做简单 IO 控制或超低功耗，优先 MCU。
 
 ##  2.OpenBCI
+![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/m3_upgrade_1000-32aba85206d0e0f85134bf8a40e2e0c5.jpg)
 面向 生物电信号（EEG/EMG/ECG 等）的开源硬件与软件平台。板卡负责前端放大、滤波、模数采样；配套 OpenBCI GUI、Python/Processing/BrainFlow 等工具做可视化与算法开发。
 - **典型硬件**: 多通道采集板（8–16 通道等级）、头戴式电极/肌电电极、无线发射/接收模块等；开源设计与活跃社区方便二次开发。
 - **适用场景**：
@@ -31,6 +33,7 @@
 何时选它：当你要 快速做生理信号原型/研究，又希望掌控数据与算法细节、便于改硬件与软件。
 
 ##  3.SparkFun RedBoard
+![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/141198163_SparkFun_RedBoard.jpg)
 SparkFun 推出的 Arduino 兼容开发板家族的统称，延续 Arduino UNO 形态与引脚，强调兼容、做工与教学友好；部分型号集成 Qwiic（I²C 免焊接生态）。
 - **常见分支**: RedBoard（ATmega328P）：UNO 级别，5 V 逻辑，入门/教学稳妥；多数库一插即用
 
