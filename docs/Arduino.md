@@ -46,7 +46,7 @@ A fast stack sensor (Qwiic system) and ready-made sample code are required
 
 ## 1. Running Water Light (Classic LED Chaser)
 Here is the code for the water-flow light.
-```Bash
+```
 const int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9};   // LED pin array
 const int ledCount = 8;                           // Number of LEDs
 const int delayTime = 150;                        // Speed control (ms), adjust as needed
@@ -78,7 +78,7 @@ This is the schematic diagram showing how my potentiometer controls the rotation
 
 
 The following code is my program for controlling the rotation of the servo motor using a potentiometer.
-```Bash
+```
 #include <Servo.h>
 
 #define PIN_SERVO 10
@@ -93,7 +93,7 @@ void setup()
 void loop()
 {
   int sensorValue = analogRead(A0);         // Read the analog value of the potentiometer from A0 (ranging from 0 to 1023)
-  int angle = map(sensorValue, 0, 180, 0, 180); 
+  int angle = map(sensorValue, 0, 1023, 0, 180); 
   myservo.write(angle);
   
   Serial.print("原始值: ");
