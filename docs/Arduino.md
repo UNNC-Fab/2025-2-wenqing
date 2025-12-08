@@ -3,51 +3,43 @@
 
 ##  1.SBC（Single-Board Computer）
 ![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/arduino.jpg)
-把“能跑操作系统的计算机”做成一块小板子（常用 Linux）。CPU、内存、存储接口、USB/网口/显示/相机等都在板上，像极小的“迷你电脑”。
-- **常见代表-**：BeagleBone Black、Olimex OLinuXino、（以及被广泛使用但非严格 OSHW 的树莓派系列）。
-- **适用场景**：
+A "mini computer" that can run an operating system is made into a small board (commonly using Linux). The CPU, memory, storage interface, USB/network port/display/camera, etc. are all on the board, resembling a very tiny "mini computer".
+- **Common representatives-**：BeagleBone Black, Olimex OLinuXino, and (the widely used but not strictly OSHW Raspberry Pi series).
+- **applicable scene**：
 
-需要 多进程/高层应用（Python/Node/C++，还能跑容器、数据库、Web 服务）
-
-多媒体/相机/显示、边缘 AI（轻量模型推理）、网络网关、工业网关
-
-需要丰富 外设接口（USB、千兆网、HDMI/MIPI、Wi-Fi/BT）
-优点：算力强、生态包多、上手开发快（SSH 进去就写代码）；可直接用高级框架。
-局限：功耗较高、启动复杂度高、实时性一般（不如 MCU 稳定可控）；系统维护与可靠性要求更高。
-何时选它：当你需要“像电脑一样”的能力（相机、显示、网络、文件系统、多任务），就选 SBC；只做简单 IO 控制或超低功耗，优先 MCU。
+Required: Multi-process/high-level applications (Python/Node/C++, capable of running containers, databases, web services)  Multimedia/camera/display, edge AI (lightweight model inference), network gateway, industrial gateway  Requires rich peripheral interfaces (USB, Gigabit network, HDMI/MIPI, Wi-Fi/BT)  
+Advantages: Strong computing power, numerous ecosystem packages, quick development (write code directly after SSHing in); can be used with advanced frameworks.  
+Limitations: Higher power consumption, complex startup, average real-time performance (not as stable and controllable as MCU); higher system maintenance and reliability requirements.  When to choose it: When you need "computer-like" capabilities (camera, display, network, file system, multitasking), choose SBC; for simple IO control or ultra-low power consumption, prioritize MCU.
 
 ##  2.OpenBCI
 ![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/m3_upgrade_1000-32aba85206d0e0f85134bf8a40e2e0c5.jpg)
-面向 生物电信号（EEG/EMG/ECG 等）的开源硬件与软件平台。板卡负责前端放大、滤波、模数采样；配套 OpenBCI GUI、Python/Processing/BrainFlow 等工具做可视化与算法开发。
-- **典型硬件**: 多通道采集板（8–16 通道等级）、头戴式电极/肌电电极、无线发射/接收模块等；开源设计与活跃社区方便二次开发。
-- **适用场景**：
-神经工程/人机接口（BCI）、脑电/肌电/心电 科研与教学
+An open-source hardware and software platform for biological electrical signals (such as EEG/EMG/ECG, etc.). The board is responsible for front-end amplification, filtering, and analog-to-digital sampling; it is accompanied by OpenBCI GUI, Python/Processing/BrainFlow, etc. tools for visualization and algorithm development.
+- **Typical hardware**: Multi-channel acquisition boards (8-16 channel grades), head-mounted electrodes/electromyography electrodes, wireless transmission/reception modules, etc. Open source design and an active community facilitate secondary development.
+- **applicable scene**：
+Neuroengineering/Brain-Computer Interface (BCI), Electroencephalogram/Muscle/ECG Research and Teaching  Prototype Experiments: Brain-controlled interaction, noise suppression/filtering algorithm verification, feature extraction 
 
-原型实验：脑控交互、噪声抑制/滤波算法验证、特征提取与分类
-优点：开源度高、资料全、社区多案例；软硬件工具链齐全（GUI + SDK），对非医学背景也友好。
-注意与局限：
-
-信号质量很依赖电极和接触（干/湿电极、皮肤准备、线缆/噪声管理）
-
-合规与安全：科研/教学 OK，若用于医疗或临床要遵循当地法规和伦理；电气安全与隔离要重视
-何时选它：当你要 快速做生理信号原型/研究，又希望掌控数据与算法细节、便于改硬件与软件。
-
+classification  Advantages: High openness, comprehensive data, multiple case studies in the community; Complete software and hardware toolchain (GUI + SDK), friendly for non-medical background.  
+Considerations and Limitations:  Signal quality heavily depends on electrodes and contact (dry/wet electrodes, skin preparation, cable/noise management)  
+Compliance and Safety: OK for research and teaching purposes. However, if used for medical or clinical purposes, local regulations and ethics must be followed; Electrical safety and isolation should be emphasized. 
+When to Choose It: When you need to quickly develop a prototype for physiological signals or conduct research, and you want to control the details of data and algorithms, and be able to easily modify hardware and software.
 ##  3.SparkFun RedBoard
 ![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/141198163_SparkFun_RedBoard.jpg)
-SparkFun 推出的 Arduino 兼容开发板家族的统称，延续 Arduino UNO 形态与引脚，强调兼容、做工与教学友好；部分型号集成 Qwiic（I²C 免焊接生态）。
-- **常见分支**: RedBoard（ATmega328P）：UNO 级别，5 V 逻辑，入门/教学稳妥；多数库一插即用
+The family of Arduino-compatible development boards launched by SparkFun, which retains the form and pins of Arduino UNO, emphasizes compatibility, quality and teaching friendliness; some models integrate Qwiic (an I²C solderless ecosystem).
+- **常见分支**: RedBoard（ATmega328P）：UNO level, 5V logic, reliable for beginners/tutorials; Most libraries are plug-and-play
 
-RedBoard Turbo（SAMD21）：48 MHz Cortex-M0+，更大 RAM/Flash，原生 USB
 
-RedBoard Artemis / Artemis Nano：超低功耗 Cortex-M4F，性能更高、蓝牙可选
+RedBoard Turbo（SAMD21）：48 MHz Cortex-M0+, larger RAM/Flash, native USB
 
-RedBoard Qwiic 版本：板上直接带 Qwiic 接口，I²C 扩展传感器“即插即用”
-适用场景：
+RedBoard Artemis / Artemis Nano：Ultra-low power Cortex-M4F, with higher performance and Bluetooth optional
 
-嵌入式入门/课程、I/O 控制、小型传感器融合、低功耗应用原型
+RedBoard Qwiic Version: The board is directly equipped with a Qwiic interface, and the I²C expansion sensor is "plug and play"
+Applicable scenarios
 
-需要 快速堆传感器（Qwiic 体系）和现成示例代码
-- **优点**：兼容 Arduino 生态、教程与示例多；做工与供电保护细节通常比白牌板更扎实；Qwiic 省焊接、接线不易错。
-- **局限性**：UNO 级别算力有限（ATmega 系列）；高性能/网络/多媒体要换更强 MCU 或直接上 SBC。
+Embedded systems Introduction/course, I/O control, small sensor fusion, low-power application prototype
 
+
+
+A fast stack sensor (Qwiic system) and ready-made sample code are required
+- **Advantage**：Compatible with the Arduino ecosystem, with a large number of tutorials and examples. The workmanship and power supply protection details are usually more solid than those of white plates. Qwiic saves soldering and makes wiring less prone to errors.
+- **Limitation**：Uno-level computing power is limited (ATmega series); For high-performance/network/multimedia applications, it is necessary to switch to a more powerful MCU or directly use an SBC.
 ##  Run water light program

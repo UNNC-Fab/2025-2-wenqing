@@ -20,7 +20,7 @@ export default defineConfig({
           { text: 'HUAWEI development language and programming environment', link: '/HUAWEI' },
           { text: 'OpenSource', link: '/OpenSource' },
           { text: 'Arduino', link: '/Arduino' },
-          { text: 'fusion', link: '/fusion' }
+          { text: 'CAD', link: '/CAD' }
         ]
       }
     ],
