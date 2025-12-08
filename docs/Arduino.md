@@ -25,7 +25,7 @@ When to Choose It: When you need to quickly develop a prototype for physiologica
 ##  3.SparkFun RedBoard
 ![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/141198163_SparkFun_RedBoard.jpg)
 The family of Arduino-compatible development boards launched by SparkFun, which retains the form and pins of Arduino UNO, emphasizes compatibility, quality and teaching friendliness; some models integrate Qwiic (an I²C solderless ecosystem).
-- **常见分支**: RedBoard（ATmega328P）：UNO level, 5V logic, reliable for beginners/tutorials; Most libraries are plug-and-play
+- **Common branches**: RedBoard（ATmega328P）：UNO level, 5V logic, reliable for beginners/tutorials; Most libraries are plug-and-play
 
 
 RedBoard Turbo（SAMD21）：48 MHz Cortex-M0+, larger RAM/Flash, native USB
@@ -42,4 +42,63 @@ Embedded systems Introduction/course, I/O control, small sensor fusion, low-powe
 A fast stack sensor (Qwiic system) and ready-made sample code are required
 - **Advantage**：Compatible with the Arduino ecosystem, with a large number of tutorials and examples. The workmanship and power supply protection details are usually more solid than those of white plates. Qwiic saves soldering and makes wiring less prone to errors.
 - **Limitation**：Uno-level computing power is limited (ATmega series); For high-performance/network/multimedia applications, it is necessary to switch to a more powerful MCU or directly use an SBC.
-##  Run water light program
+
+
+## 1. Running Water Light (Classic LED Chaser)
+Here is the code for the water-flow light.
+
+const int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9};   // LED pin array
+const int ledCount = 8;                           // Number of LEDs
+const int delayTime = 150;                        // Speed control (ms), adjust as needed
+
+void setup() {
+  // Set all LED pins as outputs
+  for (int i = 0; i < ledCount; i++) {
+    pinMode(ledPins[i], OUTPUT);
+  }
+
+  Serial.begin(115200);
+  Serial.println(F("Classic Running Water Light Started!"));
+}
+
+void loop() {
+  // Turn on LEDs one by one from left to right
+  for (int i = 0; i < ledCount; i++) {
+    digitalWrite(ledPins[i], HIGH);   // Light up current LED
+    delay(delayTime);                 // Hold for a moment
+    digitalWrite(ledPins[i], LOW);    // Turn off (creates flowing effect)
+  }
+}
+
+
+
+This is the schematic diagram showing how my potentiometer controls the rotation of the servo motor.
+![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/ezgif-2da6b5ea222dbc9f.gif)
+
+
+
+The following code is my program for controlling the rotation of the servo motor using a potentiometer.
+
+#include <Servo.h>
+
+#define PIN_SERVO 10
+
+Servo myservo;
+
+void setup()
+{ Serial.begin(115200);
+  myservo.attach(PIN_SERVO);
+}
+
+void loop()
+{
+  int sensorValue = analogRead(A0);         // Read the analog value of the potentiometer from A0 (ranging from 0 to 1023)
+  int angle = map(sensorValue, 0, 180, 0, 180); 
+  myservo.write(angle);
+  
+  Serial.print("原始值: ");
+  Serial.print(sensorValue);
+  Serial.print(" -> 映射角度: ");
+  Serial.println(angle);
+  delay(200);  
+}
