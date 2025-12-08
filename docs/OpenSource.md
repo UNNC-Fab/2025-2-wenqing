@@ -1,25 +1,56 @@
-# Apache License 2.0 介绍
-![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/3ad7976581264cd208f4aaff6244f8f2.mini_.jpg)
-Apache License 2.0（简称 Apache 2.0 或 ASL 2.0）是一种高度流行的开源软件许可协议，由 Apache 软件基金会（Apache Software Foundation，简称 ASF）于 2004 年正式发布。它是宽松型（permissive）开源许可的代表之一，允许开发者自由使用、修改和分发代码，而没有 copyleft 许可（如 GPL）那样的强制开源要求。该许可的起源可以追溯到 ASF 的早期努力：ASF 于 1999 年成立，其前身是 Apache Group（成立于 1995 年），最初是为了管理 Apache HTTP Server 项目而创建许可协议。Apache License 的第一个版本（1.0）于 1995 年左右出现，主要用于保护开源软件的自由分发；随后在 2000 年发布了 1.1 版本，进行了小幅优化，如简化广告条款。2004 年的 2.0 版本则是对前版的一次重大修订，引入了更明确的专利授权条款，以应对当时开源社区日益关注的软件专利诉讼风险（如 SCO vs. IBM 案的影响）。这一修订旨在平衡开源自由与商业可行性，使其更适合企业级应用，同时避免“专利陷阱”（patent trolls）。
+# Introduction to Apache License 2.0
+![Apache License 2.0](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/3ad7976581264cd208f4aaff6244f8f2.mini_.jpg)
 
-作为 ASF 的核心许可，Apache 2.0 的设计哲学强调协作性和长期可持续性：它允许贡献者保留对自身代码的完整权利，同时授予 ASF 和其项目永久的分发和构建权限。这促进了开源项目的社区驱动开发，并在技术领域如 web 服务器、大数据和云计算中广泛应用。截至 2025 年，该许可仍是 ASF 所有项目的默认选择，没有重大更新或新版本发布，但社区讨论中出现了新兴趋势，如整合区块链补偿机制和公平代码原则，以解决开发者报酬问题和许可互操作性挑战。这些趋势反映了开源生态的演进，但 Apache 2.0 的核心条款保持稳定，继续被视为开源许可的“金标准”，特别是在减少专利风险和支持双许可模式（开源 + 商业）方面。
+Apache License 2.0 (commonly known as Apache 2.0 or ASL 2.0) is one of the most popular permissive open-source licenses. It was officially released in January 2004 by the Apache Software Foundation (ASF). As a classic permissive license, it allows almost unrestricted use, modification, and distribution of code — including incorporation into proprietary (closed-source) software — without the strong copyleft requirements found in licenses like the GPL.
 
-### 核心特点
+### Origin and Evolution
+- **1995**: Apache Group (predecessor of ASF) created the original Apache License 1.0 for the Apache HTTP Server.
+- **2000**: Apache License 1.1 — minor improvements, mainly simplifying the advertising clause.
+- **2004**: Apache License 2.0 — major revision that introduced explicit patent grants and a patent termination clause in response to rising software patent litigation risks at the time (e.g., the SCO vs. IBM case).
 
-权限授予：用户可以免费使用、复制、修改、合并、分发和销售软件，包括将其集成到专有（proprietary）软件中。唯一要求是必须保留原有的版权声明、许可条款和免责声明。
+The 2004 revision struck a perfect balance between open-source freedom and commercial practicality, making Apache 2.0 especially attractive to enterprises while protecting contributors and users from patent trolls.
 
-专利授权：明确授予用户专利使用权。如果贡献者拥有相关专利，他们会自动授予使用者永久、非独占的许可。同时，如果有人起诉专利侵权，许可会自动终止（这是一种防御机制）。
+As of 2025, Apache 2.0 remains the default and only license for all new Apache projects. No major new version has been released, though community discussions have emerged around future enhancements (e.g., blockchain-based contributor compensation and fair-code principles). The core text, however, remains stable and is still regarded as a “gold standard” among permissive licenses.
 
-免责条款：软件提供“as is”（原样），不保证无缺陷或适合特定用途。开发者不对任何损害负责。
+### Core Features
 
-兼容性：与许多其他许可兼容，包括 GPL v3（但不兼容 GPL v2），这使得它适合混合使用不同开源组件的项目。
+- **Broad Permissions**  
+  You may freely use, copy, modify, merge, publish, distribute, sublicense, and/or sell the software — including in proprietary products.
 
-没有 copyleft：不像 GPL 那样要求衍生作品必须开源。你可以基于 Apache 2.0 代码创建闭源软件，只要遵守基本通知要求。
+- **Explicit Patent Grant**  
+  Contributors automatically grant all users a perpetual, worldwide, royalty-free patent license for their contributions. If a contributor (or anyone) sues you for patent infringement over the licensed code, their patent license to you is automatically terminated (defensive termination clause).
 
-### 与其他许可的比较
+- **Notice & Attribution Requirements**  
+  You must retain the original copyright notice, license text, and disclaimer in all distributions (including binary forms).
 
-相比于MIT而言：两者都很宽松，MIT 更简短（几行文字），而 Apache 2.0 更详细，特别强调专利保护。Apache 2.0 适合企业环境，因为它减少了专利诉讼风险。
+- **No Copyleft**  
+  Unlike GPL, derivative works do **not** need to be open-sourced. You can keep your modifications proprietary.
 
-相比于GPL (copyleft)而言：GPL 强制所有修改和衍生作品必须开源并使用相同许可，而 Apache 2.0 不强制。这让 Apache 2.0 更受商业公司青睐，比如 Google、Microsoft 和 Apple 常用它。
+- **As-Is Disclaimer**  
+  The software is provided “AS IS” without warranties of any kind.
 
-流行度：根据最近的开源报告（如 GitHub 的 Octoverse 2023），Apache 2.0 是第二受欢迎的许可（仅次于 MIT），在企业级项目中占比高。例如，Android 系统、TensorFlow 和 Hadoop 都使用它。
+- **License Compatibility**  
+  Compatible with GPLv3 (but not GPLv2), making it easy to combine with many other open-source components.
+
+### Comparison with Other Popular Licenses
+
+| Feature                  | Apache 2.0                         | MIT                                | GPL v3 (Copyleft)                  |
+|--------------------------|------------------------------------|------------------------------------|------------------------------------|
+| Permissive?              | Yes                                | Yes                                | No                                 |
+| Length & Readability     | Medium (~2 pages)                  | Very short (a few lines)           | Long                               |
+| Patent Grant             | Explicit + defensive termination   | None                               | Explicit (but weaker protection)   |
+| Can be used in proprietary software? | Yes                        | Yes                                | No (must remain open-source)       |
+| Commercial friendliness  | Extremely high                     | Extremely high                     | Low                                |
+| Typical users            | Google, Microsoft, Apple, Android, TensorFlow, Kubernetes, Hadoop | Most small projects & libraries    | Linux kernel, GNU tools            |
+
+**Popularity (2025)**: According to GitHub Octoverse and Open Source Initiative reports, Apache 2.0 remains the second most-used license worldwide (just behind MIT) and the #1 permissive license in enterprise and cloud-native projects.
+
+### Famous Projects Using Apache 2.0
+- Android Open Source Project (AOSP)
+- Kubernetes
+- Apache Hadoop, Spark, Kafka
+- TensorFlow
+- Flutter (Google)
+- Swift (Apple’s open-source parts)
+
+In short, if you want maximum freedom, strong patent protection, and enterprise-friendly terms, Apache License 2.0 is still one of the best choices in the open-source world.

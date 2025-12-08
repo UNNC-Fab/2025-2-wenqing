@@ -1,55 +1,71 @@
-### 华为开发语言和编程环境详解
-![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/R-C.jpg)
-华为作为一家全球领先的科技公司，其开发语言和编程环境主要围绕其核心产品线，如HarmonyOS（鸿蒙操作系统）、云服务、AI和硬件设备展开。以下是从多个维度详细介绍华为的开发语言和编程环境，包括主流语言、开发工具、应用场景以及最新进展。我会基于官方和可靠来源进行说明，确保信息准确。
+### Detailed Overview of Huawei's Programming Languages and Development Environment
+![Huawei Logo](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/R-C.jpg)
 
-#### 1. **主流开发语言**
-华为的开发生态支持多种编程语言，具体取决于产品领域。以下是关键语言的概述：
+As a global technology leader, Huawei's programming languages and development environments revolve around its core product lines: HarmonyOS, cloud services, AI, and hardware devices. This article provides a comprehensive breakdown of Huawei's mainstream languages, tools, application scenarios, and the latest developments (as of 2025), based on official documentation and reliable sources.
 
-- **ArkTS（Ark TypeScript）**：
-  - 这是华为鸿蒙生态（HarmonyOS）的核心应用开发语言。它是TypeScript的扩展，专为多端应用开发设计，支持声明式UI范式、状态管理和跨设备部署。
-  - **特点**：简洁高效，提供AI辅助编码、实时预览和组件化开发。开发者可以用它快速构建手机、平板、智能穿戴等设备的原生应用。
-  - **适用场景**：鸿蒙原生应用开发，例如UI交互、数据绑定和动画效果。相比传统JavaScript，它更注重类型安全和性能优化。
+#### 1. Mainstream Programming Languages
 
-- **仓颉编程语言（Cangjie）**：
-  - 这是华为2024年推出的自研编程语言，面向全场景智能设备，旨在取代或补充传统语言如Java和Go。
-  - **特点**：原生智能化（内置AI AgentDSL，支持自然语言编程）、高性能（优于Java、Go和Swift）、强安全（内置内存管理和隐私保护）和天生全场景（支持鸿蒙、云端和边缘计算）。
-  - **适用场景**：鸿蒙原生应用、服务应用和AI驱动开发。例如，用于构建智能家居系统或AI算法模块。仓颉已适配华为开发者空间的CodeArts IDE，无需额外安装环境。
+Huawei supports a wide range of languages depending on the product domain. Here are the key ones:
 
-- **C/C++ 和汇编语言**：
-  - 用于底层系统开发，如鸿蒙内核（基于OpenHarmony）和硬件驱动。
-  - **特点**：高性能、低级控制，适合实时系统和嵌入式设备。
-  - **适用场景**：鸿蒙OS内核开发、5G基站和路由器固件。华为的HiSilicon芯片（如麒麟处理器）常用C/C++优化。
+- **ArkTS (Ark TypeScript)**  
+  The primary application development language for the HarmonyOS ecosystem. It is an enhanced version of TypeScript specifically designed for multi-device native development, featuring declarative UI, state management, and seamless cross-device deployment.  
+  **Features**: Concise syntax, AI-assisted coding, real-time preview, component-based development, strong type safety, and high performance.  
+  **Use Cases**: Native HarmonyOS apps for phones, tablets, wearables, smart screens, etc. Ideal for UI interaction, data binding, and animations.
 
-- **Java 和 Kotlin**：
-  - 主要用于安卓兼容应用和云服务开发。华为的EMUI（基于安卓）和部分鸿蒙应用仍支持Java。
-  - **特点**：跨平台、成熟生态。Kotlin作为Java的现代替代，常用于移动App。
+- **Cangjie Programming Language**  
+  Huawei's self-developed language officially launched in 2024, targeting full-scenario intelligent devices. It aims to replace or complement traditional languages like Java and Go.  
+  **Features**:  
+  - Native intelligence (built-in AI Agent DSL, supports natural-language-like programming)  
+  - Extremely high performance (faster than Java, Go, and Swift)  
+  - Strong security (built-in memory safety and privacy protection)  
+  - Born for full-scenario (supports HarmonyOS, cloud, and edge computing)  
+  **Use Cases**: HarmonyOS native apps, service-layer development, AI-driven features (e.g., smart home systems, intelligent algorithms). Cangjie is already integrated into Huawei's CodeArts IDE with zero setup required.
 
-- **其他语言**：
-  - Python：用于AI和数据分析，如华为的MindSpore框架。
-  - JavaScript/TypeScript：Web开发和前端，如华为云的Serverless函数。
-  - Go/Rust：新兴语言，用于高并发服务和安全关键系统。
+- **C / C++ and Assembly**  
+  Used for low-level system development, such as the HarmonyOS kernel (based on OpenHarmony) and hardware drivers.  
+  **Features**: Maximum performance and fine-grained control, essential for real-time and embedded systems.  
+  **Use Cases**: HarmonyOS kernel, 5G base stations, router firmware, and HiSilicon SoCs (Kirin, Ascend series).
 
-华为强调多语言兼容，开发者可根据需求选择。例如，鸿蒙系统底层用C/C++，应用层用ArkTS或仓颉。
+- **Java and Kotlin**  
+  Primarily used for Android-compatible apps and cloud services. Many legacy EMUI and early HarmonyOS apps still use Java; Kotlin is the modern replacement.  
+  **Features**: Mature ecosystem, excellent cross-platform support.
 
-#### 2. **编程环境和开发工具**
-华为提供一站式开发环境，支持从代码编写到部署的全流程。
+- **Other Languages**  
+  - **Python**: Dominant in AI and data science (MindSpore framework, ModelArts).  
+  - **JavaScript / TypeScript**: Web and serverless development on Huawei Cloud.  
+  - **Go / Rust**: Increasingly used for high-concurrency services and security-critical systems.
 
-- **DevEco Studio**：
-  - 这是鸿蒙应用的主要IDE，支持ArkTS、仓颉等语言。
-  - **功能**：AI智能编码、实时预览、调试、性能调优和多设备模拟。支持一键构建和部署到手机、平板、车机等。
-  - **安装与使用**：从华为开发者联盟官网下载(https://developer.huawei.com/consumer/cn/deveco-studio/)，支持Windows、macOS和Linux。初学者可通过教程快速上手。
-  - **优势**：集成鸿蒙SDK，简化跨端开发。
+Huawei emphasizes multi-language compatibility: C/C++ at the kernel level, ArkTS/Cangjie at the application layer, and Python/Java in cloud/AI scenarios.
 
-- **CodeArts IDE（华为云开发者工具）**：
-  - 云端IDE，支持仓颉等语言，无需本地安装。集成于华为云，适合团队协作。
-  - **功能**：代码托管、CI/CD管道和AI辅助。2025年已预置仓颉环境，开机即用。
+#### 2. Programming Environments & Development Tools
 
-- **其他工具**：
-  - **Huawei Cloud Developer Toolkit**：用于云服务开发，支持Java/Python等。
-  - **MindSpore Studio**：AI开发环境，基于Python。
-  - **HarmonyOS SDK**：提供API和库，用于设备集成。
+Huawei provides complete, integrated toolchains covering the entire development lifecycle.
 
-#### 3. **应用场景与学习建议**
-- **鸿蒙生态**：重点学习ArkTS和仓颉，用于智能设备App开发。华为开发者联盟提供免费课程和认证。
-- **云与AI**：Python和Java为主，结合华为云学堂的系列课程。
+- **DevEco Studio**  
+  The official IDE for HarmonyOS application development, supporting ArkTS, Cangjie, Java, etc.  
+  **Key Features**: AI-powered code completion, real-time device preview, debugging, performance profiling, multi-device simulators, one-click build & deployment.  
+  **Download**: https://developer.huawei.com/consumer/cn/deveco-studio/  
+  **Platforms**: Windows, macOS, Linux  
+  **Advantages**: Bundled HarmonyOS SDK, dramatically simplifies cross-device development.
+
+- **CodeArts IDE (Huawei Cloud)**  
+  Cloud-native IDE with Cangjie pre-installed and ready to use out of the box. Perfect for teams and server-side development.  
+  **Features**: Git hosting, CI/CD pipelines, collaborative editing, AI assistance.
+
+- **Other Major Tools**  
+  - **Huawei Cloud Developer Toolkit**: For cloud-native development (Java, Python, Node.js, etc.).  
+  - **MindSpore Studio**: Dedicated AI development environment based on Python.  
+  - **HarmonyOS SDK & DevEco Device Tool**: For hardware integration and on-device testing.
+
+#### 3. Application Scenarios & Learning Recommendations
+
+| Scenario               | Recommended Languages         | Key Learning Resources                          |
+|-----------------------|-------------------------------|-------------------------------------------------|
+| HarmonyOS Native Apps | ArkTS → Cangjie (future)      | Huawei Developer Alliance courses & certifications |
+| System / Kernel       | C / C++                       | OpenHarmony contribution guide                  |
+| Cloud Services        | Java, Python, Go, Node.js     | Huawei Cloud Academy                            |
+| AI & Machine Learning | Python (MindSpore)            | MindSpore official tutorials                    |
+| Full-scenario & Future| Cangjie                       | CodeArts IDE + official Cangjie documentation   |
+
+
 

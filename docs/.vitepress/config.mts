@@ -21,7 +21,9 @@ export default defineConfig({
           { text: 'OpenSource', link: '/OpenSource' },
           { text: 'Arduino', link: '/Arduino' },
           { text: 'CAD', link: '/CAD' },
-          { text: 'Project management', link: '/Project management' }
+          { text: 'Project management', link: '/Project management' },
+          { text: '3D print', link: '/3D print' },
+          { text: 'Laser Cutting', link: '/Laser Cutting' }
         ]
       }
     ],

@@ -1,17 +1,28 @@
-### Fab Lab 的背景
+### Background of Fab Lab
 
-Fab Lab（全称 Fabrication Laboratory，数字制造实验室）是一个全球性的开源硬件和数字制造网络，旨在通过提供先进的数字制造工具（如 3D 打印机、激光切割机、数控机床等）来促进创新、教育和社区发展。它强调“如何制造（几乎）任何东西”（How to Make Almost Anything）的理念，帮助个人和社区从数字设计到物理原型制作，实现从“比特到原子”的转化。
+Fab Lab (short for Fabrication Laboratory) is a global open-source network of digital fabrication laboratories dedicated to fostering innovation, education, and community development by providing access to advanced digital manufacturing tools (such as 3D printers, laser cutters, CNC machines, etc.). It embodies the philosophy of “How to Make (Almost) Anything,” enabling individuals and communities to transform digital designs into physical prototypes — realizing the transition from “bits to atoms.”
 
-#### 起源与历史
-Fab Lab 的概念起源于美国麻省理工学院（MIT）的 Center for Bits and Atoms (CBA)，由 MIT 教授 Neil Gershenfeld 于 2001 年提出。他在 MIT 的课程“How to Make (Almost) Anything”中首次实验性地建立了第一个 Fab Lab，作为一个社区外展项目，与已故的社会活动家 Mel King 合作。该实验室最初是为了探索数字技术如何赋能普通人进行制造而设立的。
+#### Origin and History
 
-- **第一个 Fab Lab**：2002 年在 MIT 正式启动，作为 Grassroots Invention Group 和 CBA 的合作项目。最初的资金部分来自美国国家科学基金会（NSF）。
-- **全球扩展**：第一个位于 MIT 以外的 Fab Lab 是印度 Vigyan Ashram 于 2002 年建立的，设备由 NSF 和印度理工学院（IIT Kanpur）提供。此后，Fab Lab 迅速扩展到全球。2007 年，一群 MIT 学生开发了第一个移动 Fab Lab，推动了其在偏远地区的应用。
-- **Fab Foundation 的成立**：为了管理全球网络，Fab Foundation 于 2011 年左右成立，由 Gershenfeld 等领导，支持 Fab Lab 的标准化和可持续发展。截至 2023 年，全球已有超过 2000 个 Fab Lab，覆盖 100 多个国家，包括教育机构、社区中心和企业实验室。
+The Fab Lab concept originated at the Massachusetts Institute of Technology (MIT) Center for Bits and Atoms (CBA). It was first proposed in 2001 by MIT professor Neil Gershenfeld during his famous course “How to Make (Almost) Anything.” The first Fab Lab was established as an experimental community outreach project in collaboration with the late social activist Mel King.
 
-Fab Lab 的发展受到了开源运动和数字制造革命的影响。它从 MIT 的学术实验演变为一个全球运动，强调包容性、创新和可持续发展。例如，在美国，Fab Lab 被用于推动制造业回流；在发展中国家，则用于解决本地问题如农业工具原型制作。
+- **First Fab Lab**: Officially launched at MIT in 2002 as a joint initiative between the Grassroots Invention Group and CBA, with initial funding partly from the U.S. National Science Foundation (NSF).
+- **Global Expansion**: The first Fab Lab outside MIT was set up in 2002 at Vigyan Ashram in India, with equipment supported by NSF and IIT Kanpur. The network grew rapidly worldwide. In 2007, a group of MIT students developed the first mobile Fab Lab, bringing digital fabrication capabilities to remote and underserved regions.
+- **Establishment of the Fab Foundation**: Around 2011, the Fab Foundation was created under the leadership of Gershenfeld and others to manage the global network, standardize operations, and ensure sustainability.  
+  As of 2025, there are over 2,500 Fab Labs in more than 130 countries, located in universities, schools, community centers, libraries, and even corporations.
 
-#### 核心特点与影响
-- **工具与标准**：每个 Fab Lab 必须配备一套标准工具套件（价值约 5-10 万美元），包括激光切割机、3D 打印机、电子电路板制作机等。这些工具基于开源设计，便于复制和共享。
-- **教育与社区导向**：Fab Lab 不只是实验室，更是教育平台。它们通过工作坊、课程和 Fab Academy（一个分布式在线教育项目）培训用户数字制造技能，促进 STEM 教育和创业。
-- **全球影响**：Fab Lab 已应用于各种领域，如医疗器械原型（例如 COVID-19 期间的 PPE 制作）、可持续设计和艺术创作。它推动了“创客运动”（Maker Movement）的兴起，并与联合国可持续发展目标（如创新基础设施）对接。
+The evolution of Fab Lab has been deeply influenced by the open-source movement and the digital fabrication revolution. What began as an academic experiment at MIT has transformed into a worldwide movement emphasizing inclusivity, creativity, local problem-solving, and sustainable development.
+
+#### Core Characteristics and Global Impact
+
+- **Standard Equipment & Open Design**: Every official Fab Lab must be equipped with a standardized toolkit (typically valued at $50,000–$100,000), including laser cutters, 3D printers, vinyl cutters, CNC milling machines, electronics workstations, etc. These tools are based on open-source designs, making replication and knowledge-sharing easy.
+- **Education & Community Focus**: Fab Labs are not just workshops — they are powerful learning platforms. Through hands-on workshops, local programs, and the distributed online Fab Academy, they teach digital fabrication skills, promote STEM education, entrepreneurship, and lifelong learning.
+- **Worldwide Impact**:  
+  - Rapid prototyping of medical devices (e.g., PPE and ventilators during COVID-19)  
+  - Sustainable product design and circular economy projects  
+  - Local innovation in agriculture, education, and art  
+  - Revitalization of manufacturing in developed countries and empowerment of communities in developing regions
+
+Fab Labs have become a cornerstone of the global Maker Movement and align closely with the United Nations Sustainable Development Goals, particularly Goal 9 (Industry, Innovation, and Infrastructure) and Goal 4 (Quality Education).
+
+In short, Fab Lab is far more than a collection of machines — it is a global platform that democratizes advanced manufacturing and turns ideas into reality, anywhere in the world.
