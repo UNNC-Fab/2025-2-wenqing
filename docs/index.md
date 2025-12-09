@@ -3,8 +3,6 @@
 layout: home
 hero:
   name: "Fablab Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
   actions:
     - theme: brand
       text: Fablab background

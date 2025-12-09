@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Fablab Project",
-  description: "A VitePress Site",
   base: '/2025-2-wenqing/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
