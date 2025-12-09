@@ -14,7 +14,7 @@ Model positioning, automatic support generation, and toolpath planning were perf
 Using properly dried PLA filament, the printing process was stable, interlayer bonding excellent, surface finish fine, and snap-fit features functional without adhesive, indicating that process parameters were in the optimal range.
 
 ### 5. Failed Specimen and Defect Analysis
-![Defective printed part](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/501e4973cafd5be5799b87c051834ec6.jpg)  
+![Defective printed part](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/11111.jpg)
 The same filament batch, stored for an extended period, absorbed significant moisture. This resulted in pronounced stringing, delamination, and localized warping. 
 The reasons for failure:  
 - Moisture evaporation formed bubbles cause inconsistent extrusion  
