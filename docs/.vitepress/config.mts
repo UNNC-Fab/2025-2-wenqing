@@ -22,7 +22,10 @@ export default defineConfig({
           { text: 'CAD', link: '/CAD' },
           { text: 'Project management', link: '/Project management' },
           { text: '3D print', link: '/3D print' },
-          { text: 'Laser Cutting', link: '/Laser Cutting' }
+          { text: 'Laser Cutting', link: '/Laser Cutting' },
+          { text: 'PCB Manufacutre', link: '/PCB Manufacutre' },
+          { text: 'Molding and Casting', link: '/Molding and Casting' },
+          { text: 'Processing', link: '/Processing' }
         ]
       }
     ],
