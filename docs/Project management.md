@@ -14,11 +14,13 @@ Open a terminal  and run:
 ```bash
 node -v
 npm -v
+```
 
 ### 1.2 Install VitePress
+```bash
 npm add -D vitepress@next
 npx vitepress init
-
+```
 
 
 ### 1.3 Understand the Folder Structure
