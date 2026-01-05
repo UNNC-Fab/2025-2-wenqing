@@ -1,6 +1,5 @@
 
 ### PCB Manufacutre
-```markdown
 
 ## Experiment Overview and Objectives
 This experiment involved the use of the Roland MODELA MDX-40, a compact desktop CNC milling and scanning machine, to investigate subtractive manufacturing on metallic or composite workpieces.
