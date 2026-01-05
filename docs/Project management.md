@@ -1,7 +1,40 @@
 # **Project Management**
+## **1. Create web**
+To implement the dynamic web visualization frontend
+## **1. Create Web (Build a Documentation Site with VitePress)**
+
+> **Goal**: turn our project docs / progress logs / demos into a website that can be updated continuously.  
+> **Workflow**: Write in Markdown → Preview locally → Build static files → Host on GitHub Pages.
+
+---
+
+### 1.1 Environment Check
+Open a terminal  and run:
+
+```bash
+node -v
+npm -v
+
+### 1.2 Install VitePress
+npm add -D vitepress@next
+npx vitepress init
 
 
-## **1. Create a Repository**
+
+### 1.3 Understand the Folder Structure
+
+my-doc-site/
+├─ docs/
+│  ├─ .vitepress/
+│  │  └─ config.ts        # site config: title, nav, base, sidebar, etc.
+│  ├─ index.md            # homepage
+│  ├─ guide/              # your custom content folder (example)
+│  │  └─ intro.md
+│  └─ public/             # static assets (logo/images), optional
+└─ package.json
+
+
+## **2. Create a Repository**
 ## Create Your First GitHub Repository (Step-by-Step)
 
 ![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/b74b5251c38c3983b78377126c1c2cc4.png)
@@ -37,7 +70,7 @@ We’ll be taken to our brand new repository.
 3. → **Personal access tokens** → **Tokens (classic)**  
 4. Top right → **Generate new token (classic)**  
 5. Check these permissions:
-   - [x] **repo** ← Required
+   - [√] **repo** ← Required
    - [x] workflow 
 6. Scroll down → **Generate token**  
 7. **Copy the token immediately** 
