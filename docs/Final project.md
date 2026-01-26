@@ -1,4 +1,5 @@
 # Final Project — OAK Camera Management + Custom Object Detection 
+
 > **Goal:** Use an OAK camera to build a reproducible pipeline: collect and manage data, train a custom YOLO detector, and finally output **text-only** detection results (target format):  
 > `animal 0.87 x1=143 y1=92 x2=388 y2=401`  
 >
