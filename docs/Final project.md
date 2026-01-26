@@ -126,17 +126,18 @@ All coords are normalized to 0~1.
 Example (labels/train/img_000001.txt):
 0 0.413 0.522 0.318 0.402
 
-## 5. Model Training（模型训练）
+## 5. Model Training
 
-### 5.1 Training Command（训练命令）
-> 在 VS Code 终端运行（注意：这是命令，不是 Python 代码）
+### 5.1 Training Command
+> 在 VS Code 终端运行
 
-```bash
 yolo detect train data=data.yaml model=yolov8n.pt imgsz=640 epochs=100 batch=16 patience=50
-```
+
 
 ### 5.2 Training Script (save as code/02_train_yolo.py)
-```python
+::: code-group
+
+```python [code/02_train_yolo.py]
 from ultralytics import YOLO
 
 def main():
