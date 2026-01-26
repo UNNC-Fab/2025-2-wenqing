@@ -25,7 +25,8 @@ export default defineConfig({
           { text: 'Laser Cutting', link: '/Laser Cutting' },
           { text: 'PCB Manufacutre', link: '/PCB Manufacutre' },
           { text: 'Molding and Casting', link: '/Molding and Casting' },
-          { text: 'Processing', link: '/Processing' }
+          { text: 'Processing', link: '/Processing' },
+          { text: 'Final project', link: '/Final project' }
         ]
       }
     ],
