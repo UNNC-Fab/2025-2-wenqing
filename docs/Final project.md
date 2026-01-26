@@ -46,7 +46,7 @@ pip install depthai opencv-python ultralytics
 ## 3. OAK Camera Integration & Data Capture (DepthAI)
 
 ### 3.1 Device Overview 
-![OAK camera overview](![](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/a3de920593d6be1a4ab8b6cb2cc5da99.jpg))
+![oak Overview](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/a3de920593d6be1a4ab8b6cb2cc5da99.jpg)
 
 ### 3.2 Capture Logic
 - Start OAK RGB preview
