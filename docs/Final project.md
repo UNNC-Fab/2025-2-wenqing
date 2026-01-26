@@ -128,11 +128,11 @@ Example (labels/train/img_000001.txt):
 
 ## 5. Model Training
 ### 5.1 Training Command
-
+```python
 yolo detect train data=data.yaml model=yolov8n.pt imgsz=640 epochs=100 batch=16 patience=50
-
+```
 ### 5.2 Training Script (save as code/02_train_yolo.py)
-```bash
+```python
 from ultralytics import YOLO
 
 def main():
@@ -151,5 +151,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 ## 6. Real-time Inference (Text-only Output) — Not Stable Yet
 ![Real-time Inference](https://raw.githubusercontent.com/harry-666888/imageuploadservice/main/img/b0980afc3a63fbc80b8b7730f1d9cd34.png)
