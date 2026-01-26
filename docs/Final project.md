@@ -128,9 +128,8 @@ Example (labels/train/img_000001.txt):
 
 ## 5. Model Training
 ### 5.1 Training Command
-```bash
+
 yolo detect train data=data.yaml model=yolov8n.pt imgsz=640 epochs=100 batch=16 patience=50
-```
 
 ### 5.2 Training Script (save as code/02_train_yolo.py)
 ```bash
